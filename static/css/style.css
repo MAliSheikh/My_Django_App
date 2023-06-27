@@ -1,0 +1,160 @@
+
+
+body{
+    background-color: #ffff;
+    /* background-image: url("../img/2.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+/* .logo{
+    color: white;
+    font-family: 'Tangerine', serif;
+    font-size: 60px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+header{
+    margin-top: 5%;
+    margin-left: 3%;
+    font-family: 'Tangerine', serif;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(236, 15, 15);
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.our-menu {
+    width: 85%;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.side-1 h2 {
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    /* font-family: 'Great Vibes', cursive; */
+    font-size: 50px !important;
+}
+
+.side-1 p {
+    width: 100%;
+    margin: 10px 0px;
+    /* font-family: 'Great Vibes', cursive;     */
+    text-align: left;
+}
+
+.side-1 .btn:hover {
+    transform: scale(0.9);
+}
+
+.side-2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    transition: 0.6s ease;
+    margin-right: -100px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.side-2 p {
+    font-size: 22px;
+    font-weight: 100px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.footer-social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.footer-social-links a{
+    background-color: white;
+    color: black;
+}
+
+.contactform{
+    min-width: 100%;
+    padding: 40px;
+    background: #ffff;
+    font-family:'Fredoka', sans-serif ;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 20%);
+}
+.contactform h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+}
+.contactform .inputbox{
+    position: relative;
+    width:100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;/*boder ko select krne pr uski line khatan krta ha*/
+}
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox  span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+/*----------------------  ~  ye effect lae ga jab text likhe ge   -----------------*/
+/*------------valid required ko show kr rha ha form ka -------------------*/
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: red;
+    font-size: 14px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: red;
+    color: #ffff;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}

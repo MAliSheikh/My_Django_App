@@ -7,7 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Muhammad Ali</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,37 +26,65 @@
 <body class="min-vh-100 d-flex flex-column">
 
     <header>
-        <div class="container">
+        <h1 style="font-size: 60px;"><b>Muhammad </b>Ali</h1>
+        <!-- <div class="container">
             <nav class="navbar navbar-dark bg-transparenet">
                 <a class="navbar-brand" href="#">
-                    <!-- <img src="assets/images/logo.svg" alt="logo"> -->
-                    <h1 class="logo color-black"><b>Muhammad  </b>Ali</h1>
-                </a>
+                     <img src="assets/images/logo.svg" alt="logo"> -->
+                <!-- </a> -->
                 <!-- <span class="navbar-text ml-auto d-none d-sm-inline-block">123-456-789</span> -->
                 <!-- <span class="navbar-text d-none d-sm-inline-block">email@example.com</span> -->
-            </nav>
-        </div>
+            <!-- </nav> -->
+        <!-- </div> --> 
     </header>
-    <main class="my-auto">
-        <div class="container">
-            <h1 class="page-title" style="color:rgb(25, 25, 25)">Coming soon</h1>
-            <p class="page-description color-black">In the process of debugging and fine-tuning <br> - stay tuned for the final version!
-            </p>
-            <!-- <p class="color-black">Connect with me</p> -->
 
-            <nav class="footer-social-links">
-                <!-- <a href="#!" class="social-link"><i class="fa-brands fa-facebook-f"></i></a> -->
-                <!-- <a href="#!" class="social-link"><i class="fa-brands fa-twitter"></i></a> -->
-                <!-- <a href="#!" class="social-link"><i class="fa-brands fa-google"></i></a> -->
-                <!-- <a href="#!" class="social-link"><i class="fa-brands fa-slack"></i></a> -->
-                <!-- <a href="#!" class="social-link"><i class="fa-brands fa-skype"></i></a> -->
-                <a href="https://github.com/Mahad-lab" class="social-link"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.sololearn.com/profile/12159066" class="social-link"><i class="fa-solid fa-s"></i></a>
-                <a href="https://replit.com/@mahadahmed" class="social-link"><i class="fa-solid fa-code"></i></a>
-                <a href="https://www.freecodecamp.org/MahadAhmed" class="social-link"><i class="fa-brands fa-free-code-camp"></i></a>
-            </nav>
+    <div id="our-mobile">
+        <section class="our-menu">
+            <div class="side-1" data-aos="fade-down-right"  data-aos-duration="1000">
+                <h2 class="page-title" style="color:rgb(25, 25, 25)">Coming soon</h2>
+                <p class="page-description color-black">In the process of debugging and fine-tuning <br> - stay tuned for the final version!</p>
+    
+                <nav class="footer-social-links">
+                    <!-- <a href="#!" class="social-link"><i class="fa-brands fa-facebook-f"></i></a> -->
+                    <!-- <a href="#!" class="social-link"><i class="fa-brands fa-twitter"></i></a> -->
+                    <!-- <a href="#!" class="social-link"><i class="fa-brands fa-google"></i></a> -->
+                    <!-- <a href="#!" class="social-link"><i class="fa-brands fa-slack"></i></a> -->
+                    <!-- <a href="#!" class="social-link"><i class="fa-brands fa-skype"></i></a> -->
+                    <a href="https://github.com/Mahad-lab" class="social-link" style="background-color: black; color: #ffff;" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.sololearn.com/profile/12159066" class="social-link" style="background-color: black; color: #ffff;"><i class="fa-solid fa-s"></i></a>
+                    <a href="https://replit.com/@mahadahmed" class="social-link" style="background-color: black; color: #ffff;"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://www.freecodecamp.org/MahadAhmed" class="social-link" style="background-color: black; color: #ffff;"><i class="fa-brands fa-free-code-camp"></i></a>
+                </nav>
+    
+            </div>
 
-        </div>
+            <div class=" side-2" data-aos="fade-down-left"  data-aos-duration="1000">
+                <div class="contactform" data-aos="fade-down-left" data-aos-duration="1000">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" name="" required="required">
+                            <span>Contact No</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea type="text" required="required"></textarea>
+                            <span>Type your Text..... </span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </section>
+    </div>
     </main>
 </body>
 
